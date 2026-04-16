@@ -60,7 +60,7 @@ Visit our validator page: [**W2EARN Validator Portal**](https://whale2earn.githu
 
 - **Telegram**: [@whale2earn_eth](https://t.me/whale2earn_eth)
 - **GitHub**: [@whale2earn](https://github.com/whale2earn)
-- **Email**: whale.2earns@gmail.com
+- **Email**: contact@hw2earn.my.id
 
 ---
 
