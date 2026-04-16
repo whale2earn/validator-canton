@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ============================================================
-         GANTI: Ubah "W2EARN" di bawah sesuai nama node kamu
-    ============================================================ -->
     <title>W2EARN | Independent Validator — Canton Network</title>
     <meta name="description" content="Independent Validator on Canton Network. Secure, Reliable, and dedicated to Mainnet & Testnet ecosystems.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://whale2earn.github.io/validator-canton/">
+    <meta property="og:title" content="W2EARN | Independent Validator — Canton Network">
+    <meta property="og:description" content="Independent Validator on Canton Network. 99.98% uptime, bare-metal infrastructure, Indonesia-based.">
+    <meta property="og:image" content="https://whale2earn.github.io/validator-canton/W2EARN.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://whale2earn.github.io/validator-canton/">
+    <meta property="twitter:title" content="W2EARN | Independent Validator — Canton Network">
+    <meta property="twitter:description" content="Independent Validator on Canton Network. 99.98% uptime, bare-metal infrastructure, Indonesia-based.">
+    <meta property="twitter:image" content="https://whale2earn.github.io/validator-canton/W2EARN.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="W2EARN.png">
+    <meta name="theme-color" content="#00ffff">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -309,6 +324,23 @@
             font-weight: 700; margin-bottom: 1rem; line-height: 1.2;
         }
         .canton-inner p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem; }
+        
+        /* Canton Logo Styling */
+        .canton-logo-wrapper {
+            margin: 2rem 0;
+            transition: var(--transition);
+        }
+        .canton-logo-wrapper img {
+            max-width: 280px;
+            height: auto;
+            filter: invert(1) brightness(1.2);
+            transition: var(--transition);
+        }
+        .canton-logo-wrapper:hover img {
+            filter: invert(1) brightness(1.4) drop-shadow(0 0 15px rgba(0, 255, 255, 0.5));
+            transform: scale(1.02);
+        }
+        
         .canton-stats { display: flex; flex-direction: column; gap: 1rem; }
         .canton-stat-row {
             display: flex; justify-content: space-between; align-items: center;
@@ -392,16 +424,16 @@
             <div class="nav-wrapper">
                 <!-- GANTI: "W2EARN" = nama node kamu -->
                 <a href="#" class="brand">
-                    <!-- GANTI: src="your-logo.png" — hapus tag ini jika tidak pakai logo -->
-                    <!-- <img src="your-logo.png" alt="Logo" class="brand-logo"> -->
+                    <!-- Logo W2EARN -->
+                    <img src="W2EARN.png" alt="W2EARN Logo" class="brand-logo">
                     W2EARN
                 </a>
 
                 <nav class="nav-links">
                     <a href="#overview">OVERVIEW</a>
                     <a href="#networks">NETWORKS</a>
-                    <!-- GANTI: mailto = email kamu -->
-                    <a href="mailto:youremail@gmail.com">CONTACT</a>
+                    <!-- Email contact -->
+                    <a href="mailto:whale.2earns@gmail.com">CONTACT</a>
                 </nav>
 
                 <div class="nav-status">
@@ -428,14 +460,12 @@
 
                 <div class="cta-group">
                     <a href="#networks" class="btn btn-primary">EXPLORE NETWORKS</a>
-                    <!-- GANTI: mailto = email kamu -->
-                    <a href="mailto:youremail@gmail.com" class="btn btn-secondary">GET IN TOUCH</a>
+                    <a href="mailto:whale.2earns@gmail.com" class="btn btn-secondary">GET IN TOUCH</a>
                 </div>
 
                 <div class="stats-bar">
-                    <!-- GANTI: angka-angka di bawah sesuai data kamu -->
                     <div class="stat-item">
-                        <span class="stat-val">99%</span>
+                        <span class="stat-val">99.98%</span>
                         <span class="stat-label">Uptime</span>
                     </div>
                     <div class="stat-item">
@@ -514,6 +544,9 @@
             <div class="canton-inner">
                 <div class="reveal">
                     <span class="tag">// CANTON NETWORK</span>
+                    <div class="canton-logo-wrapper">
+                        <img src="canton-logo.svg" alt="Canton Network Logo">
+                    </div>
                     <h2>Built for <span class="text-gradient">Canton Network</span></h2>
                     <p>
                         Canton is a privacy-enabled blockchain built for institutional-grade financial applications.
@@ -522,7 +555,6 @@
                     <a href="#networks" class="btn btn-primary" style="display: inline-flex;">VIEW ACTIVE NODES</a>
                 </div>
 
-                <!-- GANTI: isi value .val sesuai data real kamu -->
                 <div class="canton-stats reveal" style="transition-delay: 150ms;">
                     <div class="canton-stat-row">
                         <span class="label">NETWORK</span>
